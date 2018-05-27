@@ -1,0 +1,123 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+    font-family:sans-serif, serif;
+    background-color: whitesmoke;
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 37.4em; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+header h1 {
+    font-size: 40px;
+    text-align: center;   
+}
+header img {
+    float:left;
+}
+header .subheading {
+    text-align: center;
+}
+nav {
+    display:none;
+}
+nav button {}
+nav ul {}
+nav ul li {}
+nav ul li a {
+   
+}
+.forecast {
+    display:none;
+    width:100%;
+}
+nav ul li.active a {}
+nav ul li a:hover {}
+main img {
+    clear:left;
+    margin-left: 10px;
+    margin-right: 10px;   
+}
+main article {
+    border-style: solid;
+    border-bottom-style: none;
+    border-color: #555;
+}
+main h2 {
+    text-align: center;
+    color: dodgerblue;
+    font-size: 24px;
+}
+main section h3 {
+    display:none;
+}
+main .weather-summary {
+    display: flex;
+    flex-flow:row wrap;
+}
+main .weather-summary > * {
+    flex:1 100%;
+}
+main .current h3 {
+    display:block;
+    order:1;  
+    display:inline-block;
+    margin-left: 27%;
+    }
+.current img {
+    order:1;
+    float:right;
+    margin-right: 27%;          
+}  
+.highlow {
+    order:4;
+}   
+.highlow .low, .highlow .high {
+    flex:1 auto;
+}
+.low {
+    float:right;
+    margin-right:27%;
+}
+.high {
+    display: inline-block;
+    margin-left: 27%;
+}
+.conditions {
+    order:5;  
+    text-align: center;
+}
+article {
+    text-align: center;
+    word-wrap: break-word;
+    padding : 15px;   
+}
+img[src="images/dusk.jpg"]{
+    margin-left: -.5px;
+}
+#articletitle {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    border-style: solid;
+    border-top-style: none;
+    margin-top: -20px;    
+}
+.contact {
+    background-color: skyblue;
+    margin-bottom: -16px;
+    margin-top: 16px;
+    padding-top: 1px;
+   
+}
+.footer-bar {
+    background-color: dodgerblue;
+    padding: 5px;
+    padding-top: 5px;
+    margin-top: 5px;
+}

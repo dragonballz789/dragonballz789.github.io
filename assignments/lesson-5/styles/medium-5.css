@@ -1,0 +1,119 @@
+@media only screen and (min-width: 37.5em) {
+
+ header, nav, main, footer { 
+  max-width: 63.9em; 
+    }
+body {
+    background-color: green;
+}
+    nav {
+        display:block;
+        width:100%;
+        background-color: skyblue;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    nav li {
+        float:left;  
+    }
+    nav li a {
+        display: inline;
+        color:#555;
+        text-align: right;
+        padding: 8px 16px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    li:not(:first-child):before {
+            content: " | ";
+    }    
+    .forecast {
+        background-color: lightgray; 
+        border-style: solid;
+        position:relative;   
+    }  
+    .forecast h3 {
+        text-align: center;
+    }
+    .forecast, .forecast h3 {
+        display:block; 
+    }
+    .forecast table{
+        table-layout: auto;
+        width:100%;
+        text-align: center;
+        border-spacing: .5rem;
+        border-collapse: collapse;
+    } 
+    .forecast table td, th {
+        border-style: solid;    
+    }
+    
+    #articletitle{
+        text-align: center;
+    }
+    
+    article{
+        display:-webkit-flex;
+        display:flex;
+    }
+    .town-article {
+        -webkit-flex:2;
+        flex:2;
+        word-wrap: break-word;
+        width=50%;
+    }
+     img[src="images/dusk.jpg"] {
+        -webkit-flex:.5;
+        flex:.5;
+        height:400px;
+        max-width: 50%;
+    }
+    img[src ="images/beachdawn.jpg"] {
+        width:50%;
+    }
+    main h3; main .weather-summary {
+        display:-webkit-flex;
+        display:flex;
+        flex: 1 auto;
+        height:300px;
+        padding-right: 1px;
+    }
+    img[src ="images/beachdawn.jpg"] {
+        float:left;
+        height:300px;
+    }
+    h2 {
+        float:center;
+        margin-right: -5px;
+    }
+    .highlow {
+        float:right; 
+    }
+    .highlow .high{
+        margin-right: 190px;
+        float:right;
+    }
+    .highlow .low {
+        float:right;
+        margin-right: 170px;
+    }
+    .current h3 {
+        float:right;
+        margin-right: 75px;
+    }
+    img[src = "images/sunny.png"] {
+        float:right;
+        text-align: right;
+        margin-right: -70px;
+    }
+    .conditions {
+        float:right;
+        text-align: right;
+        margin-right: 115px;
+    }
+    
