@@ -20,13 +20,14 @@ header h1 {
     font-size: 2rem;
     padding:0;
     margin:0;  
-    float:center;
     margin-right: 35px;
 }
 header p {
     font-size: 11.5px;
 }
-
+header {
+    background-color: dodgerblue
+}
 h1::first-letter {
    font-size: 150%;
     vertical-align:middle;   
@@ -35,16 +36,13 @@ header .subheading {
     text-align: center;
     margin:0;
     padding:0;  
-    float:center;
     margin-left: 85px;
     margin-top: -15px
 }
-header figure.logo {
+header picture.logo {
     float:left;   
     padding:0;
-    margin:0;
-    
-    
+    margin:0;  
 }
 main h2 {
     text-align: center;
@@ -53,8 +51,7 @@ main h2 {
 .current picture {
     display:none;
 }
-nav button {
-    
+nav button {  
     background-color: transparent;
     border: none;
     font-size: 2rem;
@@ -62,8 +59,6 @@ nav button {
     float:right;
     margin-top: -80px;
     margin-right: 0;
-    
-    
 }
 
 nav ul {
@@ -84,30 +79,23 @@ nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 nav ul.hides {
     display:none;
 }
-
 nav ul li.active a{
     background-color: rgba(0,0,0,0.2);
 }
 main figure.franklin {
     margin: 0;
-    padding: 0;
-    
+    padding: 0;  
 }
-
 .current {
 text-align:center;
-    float:left;
-    
+    float:left;  
 }
 .highlow {
     float: right;
-    text-align: center;
-   
-    
+    text-align: center;  
 }
 .conditions {
-    text-align: center;
-    
+    text-align: center; 
     clear:left;
 }
 #articletitle {
@@ -115,6 +103,7 @@ text-align:center;
 }
 article {
     border:solid;
+    border-color: cornflowerblue;
     overflow: hidden;
 }
 .clearfix:after {
@@ -127,9 +116,14 @@ section.forecast {
 }
 footer .contact, .footer-bar {
     text-align: center;
-   border: 1px solidblack;
+   border: solid;
 }
 footer {
-    margin-bottom: 0;
-    
+    margin-bottom: 0;   
+}
+.footer-bar {
+    background-color:royalblue
+}
+.contact {
+    background-color: lightsteelblue
 }

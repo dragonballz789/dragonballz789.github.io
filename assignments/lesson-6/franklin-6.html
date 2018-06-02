@@ -13,9 +13,12 @@
 </head>
 <body onload ="currentdate()">
   <header>
-      <figure class="logo">
-          <img src ="images/sunny.png" alt = "cloudy" srcset="images/sunnymain.png 600w, images/sunnymedium.png 1050w, images/sunnylarge.png 2000w">
-      </figure>
+      <picture class="logo">
+          <source srcset = "images/cloudymain.jpg" media="(max-width:600px)"/>
+          <source srcset = "images/cloudymedium.jpg" media="(max-width: 950px)"/>
+          <source srcset = "images/cloudylarge.jpg" media ="(max-width: 1400px)"/>
+          <img src="images/cloudy.jpg" alt="cloudy"/>
+      </picture>
       <h1>Volcano</h1>
       <p class = "subheading">Burning weather report site</p>
       <figure>

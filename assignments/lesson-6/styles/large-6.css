@@ -1,26 +1,18 @@
 @media only screen and (min-width: 64em ) {
   
-body{
-    background-color: orangered
-}
-
-    header h1 {
+header h1 {
     text-align: center;
     font-size: 5rem;
     padding:0;
     margin:0;
-        
- 
 }
-    header p {
-        font-size: 16px;
-    
-    }
+header p {
+    font-size: 16px;
+}
 
 h1::first-letter {
-   font-size: 150%;
-    vertical-align:middle;
-    
+    font-size: 150%;
+    vertical-align:middle;  
 }
 
 header .subheading {
@@ -28,35 +20,20 @@ header .subheading {
     margin-left: 120px;
     margin-top: -45px;
     padding:0;
-    color: aliceblue;
-    
+    color: aliceblue;  
 }
-
-    nav {
-        background-color: #ccc;
+nav {
+    background-color: #ccc;
     }
-    #menu {
-        
-    }
-  
 nav ul.hides {
     display:block;
-    }
+}
     section.forecast {
-        display:block;
-    }
-  
-    section.conditions {
-       
-    }
-    .weather-summary figure, .weather-summary h3 {
-  
-    }
+    display:block;
+} 
     section.highlow {
-        text-align: center;
-       
-    }
-    
+    text-align: center;  
+}
     .forecast table {
         table-layout: auto;
         border-spacing: .5rem;
@@ -66,21 +43,18 @@ nav ul.hides {
     }
 nav button {
     display:none;
-}
-    
+} 
     .forecast h3 {
         text-align: center;
     }
     main figure.franklin{
-        float:center;
         clear:right;
         width:100%;
         overflow: hidden;
     }
     .current {
         width:33%;
-        font-size: 1.6rem;
-        
+        font-size: 1.6rem;   
     }
     .highlow {
         width:33%;
