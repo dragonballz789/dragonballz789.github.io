@@ -2,14 +2,16 @@
 <html lang="en-us">
 <head> 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css" type="text/css">
     <link rel="stylesheet" href="styles/main-6.css" type="text/css">
     <link rel="stylesheet" href="styles/medium-6.css" type="text/css">
     <link rel="stylesheet" href="styles/large-6.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <title>volcano</title>   
+    
+  <title>volcanoweather</title>   
 </head>
-<body>
+<body onload ="currentdate()">
   <header>
       <figure class="logo">
           <img src ="images/sunny.png" alt = "cloudy" srcset="images/sunnymain.png 600w, images/sunnymedium.png 1050w, images/sunnylarge.png 2000w">
@@ -20,7 +22,7 @@
           
       </figure>
   </header>
-  <nav id = "menu">
+  <nav class = "clearfix">
       <button onclick="hamburger()">&#9776;</button>
     <ul id="menuid" class="hides">
     	<li><a href="#">Home</a></li>
@@ -39,16 +41,18 @@
         <h2>Franklin</h2>
     
     <section class="weather-summary">
-      <h3>Weather Summary</h3>    
+       
+         
+    
       <div class="highlow">
-        <p class ="high">High:90 &deg; F</p>  
-        <p class = "low">Low:66  &deg; F</p>  
+        <p>High:90 &deg; F</p>  
+        <p>Low:66  &deg; F</p>  
       </div>
       <div class="current">
-          <h3>Sunny</h3>
-        <picture>
-             <img src = "" alt="sunny">
-        </picture>
+          <p>Sunny</p>
+         <figure>
+            <img src ="images/sunny.png" alt ="temperature" srcset="images/sunnymain.png 601w, images/sunnymedium.png 1051w, images/sunnylarge.png 2001w">
+        </figure>
       </div>   
       <div class="conditions">
         <p>Precipitation: 0%</p>  
@@ -89,26 +93,28 @@
 	</tbody>
     </table>
     </section>
-    <h3 id = "articletitle">Franklin Breaks Record</h3>
+    
     <article>
+        <h3 id = "articletitle">Franklin Breaks Record</h3>
       <p class="town-article">
           Nullam tristigue massa magna, sed rutrum sapien consectetur et. Donec erat dolor, posuere sed erat vitae, volutpat lobortis.
       </p>
-        <img src="" alt ="dusk">
+        <img src="images/dusk.jpg" alt ="dusk" srcset = "images/duskmain.jpg 601w, images/duskmedium.jpg 1051w, images/dusklarge.jpg 2000w">
     </article>		  
   </main> 
   <footer>
     <section class="contact">
-      <p>Volcano<br>
+        <p><b>Volcano</b><br>
       123 Main St.<br>
           Franklin, MU 83454<br>
           (999)999.9999<br>          
           contact@theurl.com<br><br></p>
     </section>
-    <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date</span>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Volcano | <span id="currentdate()"></span>
     </section>
   </footer>
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+   
+    <script type ="text/javascript" src="scripts/currentdate.js"></script>
 </body>
 </html>
