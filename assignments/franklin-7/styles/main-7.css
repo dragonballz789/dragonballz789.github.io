@@ -1,0 +1,129 @@
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+    
+
+body {
+  font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke;
+    
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 2100px;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding:0;
+    margin:0;  
+    margin-right: 35px;
+}
+header p {
+    font-size: 11.5px;
+}
+header {
+    background-color: dodgerblue
+}
+h1::first-letter {
+   font-size: 150%;
+    vertical-align:middle;   
+}
+header .subheading {
+    text-align: center;
+    margin:0;
+    padding:0;  
+    margin-left: 85px;
+    margin-top: -15px
+}
+header picture.logo {
+    float:left;   
+    padding:0;
+    margin:0;  
+}
+main h2 {
+    text-align: center;
+    color:cornflowerblue;
+}
+.current picture {
+    display:none;
+}
+nav button {  
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color:#555;
+    float:right;
+    margin-top: -80px;
+    margin-right: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+nav ul li a {
+    display:block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,.3);
+}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+
+nav ul.hides {
+    display:none;
+}
+nav ul li.active a{
+    background-color: rgba(0,0,0,0.2);
+}
+main figure.franklin {
+    margin: 0;
+    padding: 0;  
+}
+.current {
+text-align:center;
+    float:left;  
+}
+.highlow {
+    float: right;
+    text-align: center;  
+}
+.conditions {
+    text-align: center; 
+    clear:left;
+}
+#articletitle {
+    text-align: center;
+}
+article {
+    border:solid;
+    border-color: cornflowerblue;
+    overflow: hidden;
+}
+.clearfix:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+section.forecast {
+    display:none;
+}
+footer .contact, .footer-bar {
+    text-align: center;
+   border: solid;
+}
+footer {
+    margin-bottom: 0;   
+}
+.footer-bar {
+    background-color:royalblue
+}
+.contact {
+    background-color: lightsteelblue
+}

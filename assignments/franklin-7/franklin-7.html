@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize7.css" type="text/css">
+    <link rel="stylesheet" href="styles/main-7.css" type="text/css">
+    <link rel="stylesheet" href="styles/medium-7.css" type="text/css">
+    <link rel="stylesheet" href="styles/large-7.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+  <title>volcanoweather</title>   
+</head>
+<body onload ="currentdate()">
+  <header>
+      <picture class="logo">
+          <source srcset = "images/cloudymain.jpg" media="(max-width:600px)"/>
+          <source srcset = "images/cloudymedium.jpg" media="(max-width: 950px)"/>
+          <source srcset = "images/cloudylarge.jpg" media ="(max-width: 2100px)"/>
+          <img src="images/cloudy.jpg" alt="cloudy"/>
+      </picture>
+      <h1>Volcano</h1>
+      <p class = "subheading">Burning weather report site</p>
+      <figure>
+          
+      </figure>
+  </header>
+  <nav class = "clearfix">
+      <button onclick="hamburger()">&#9776;</button>
+    <ul id="menuid" class="hides">
+    	<li><a href="#">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+       
+    </ul>		
+  </nav>
+    <main>
+        <figure class="franklin">
+        <img src ="images/franklinmain.jpeg" alt = "dusk" srcset="images/franklinmain.jpeg 601w, images/franklinmedium.jpeg 1051w, images/franklinjarge.jpeg 2001w">
+        </figure>
+        <h2>Franklin</h2>
+    
+    <section class="weather-summary">
+       
+         
+    
+      <div class="highlow">
+          <p>High: 90</p>
+          <p>Low: 66</p>
+        
+      </div>
+      <div class="current">
+          <p>Sunny</p>
+         <figure>
+            <img src ="images/sunnymain.png" alt ="temperature" srcset="images/sunnymain.png 601w, images/sunnymedium.png 1051w, images/sunnylarge.png 2001w">
+        </figure>
+      </div>   
+      <div class="conditions">
+        <p>Precipitation: 0%</p>  
+        <p>Wind Speed: 5 mpg SW</p>  
+      </div>           
+    </section>
+    <section>
+        <div class="wc">
+            <p>High: <input type="text" id="high" maxlength="3" size="1"> &deg; F Low: <input type="text" id="low" maxlength="3" size="1"> &deg; F Windspeed<input type="text" id="windspeed" maxlength="3" size="1"></p>
+            <input type ="submit" onclick="windchil()">Wind Chill Factor
+        <div id='windchil()'></div>
+      </div>
+        </section>
+        
+    <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	   </thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+    </table>
+    </section>
+    
+    <article>
+        <h3 id = "articletitle">Franklin Breaks Record</h3>
+      <p class="town-article">
+          Nullam tristigue massa magna, sed rutrum sapien consectetur et. Donec erat dolor, posuere sed erat vitae, volutpat lobortis.
+      </p>
+        <img src="images/duskmain.jpg" alt ="dusk" srcset = "images/duskmain.jpg 601w, images/duskmedium.jpg 1051w, images/dusklarge.jpg 2000w">
+    </article>		  
+  </main> 
+  <footer>
+    <section class="contact">
+        <p><b>Volcano</b><br>
+      123 Main St.<br>
+          Franklin, MU 83454<br>
+          (999)999.9999<br>          
+          contact@theurl.com<br><br></p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Volcano | <span id="currentdate()"></span>
+    </section>
+  </footer>
+    <script type="text/javascript" src="scripts/hamburger-7.js"></script>
+   
+    <script type ="text/javascript" src="scripts/currentdate7.js"></script>
+    <script type="text/javascript" src="scripts/windchil.js"></script>
+</body>
+</html>
