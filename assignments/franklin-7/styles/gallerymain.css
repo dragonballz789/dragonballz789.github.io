@@ -1,0 +1,33 @@
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+    
+
+body {
+  font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke;
+    
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 2100px;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+body {
+    background-color: aqua;
+}
+.gallery ol{
+    display:grid;
+    grid-template-columns: auto;
+    background-color:ghostwhite;
+    
+}
+.gallery ol li {
+    padding:10px;
+}
+.gallery img {
+    width:100%;
+    
+    
+}

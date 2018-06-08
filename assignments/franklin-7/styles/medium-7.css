@@ -1,67 +1,35 @@
 @media only screen and (min-width: 37.5em ) {
+   
     header h1 {
-    text-align: center;
-    font-size: 5rem;
-    padding:0;
-    margin:0;
- 
-}
-    header p {
+        font-size: 4rem
+    }
+    header .subheading {
         font-size: 16px;
     }
-
-h1::first-letter {
-   font-size: 150%;
-    vertical-align:middle;
-    
-}
-
-header .subheading {
-    text-align: center;
-    margin-left: 120px;
-    margin-top: -45px;
-    padding:0;
-    color: aliceblue;
-    
-}
-    nav {
-        background-color: #ccc;
-        }
-    
     nav button{
         display:none;   
     }
-   
-    nav ul {
-        margin-left: 2%;
-        list-style-type: none;
-        margin:0;
-        padding:0;
+    #menuid {
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around; 
     }
     nav ul li a {
-
-    border-right: 1px solid rgba(0,0,0,.3);
-        border-right-color: black;
-        padding-right: 2%;
-        margin: 1px 4px 1px 4px;
-}
-    nav ul.hides {
-        display:block;
+      text-decoration: none;
+    }
+    nav ul li {
+        overflow: hidden;
+    }
+    .weather{
+        flex-flow: row;   
+    }
+    .weather h2 {
+        line-height: 215px;
         
     }
-    #menu {
-        float:left;
+    .current {
+        flex-flow: column;
     }
-nav li{
-    float:left;
-   }
-    nav ul li a {
-        border:none;
-        border-right: 1px solid; 
-        border-color: rgba(0,0,0,.3);
-        padding: .5rem;
-    }
-
     section.forecast {
         display:block;
     }
@@ -75,41 +43,26 @@ nav li{
         width:100%;
         text-align: center;
         background-color: #ccc;
-        
-        
     }
     .forecast h3, .forecast table, th, td {
         border:1px solid black;
         border-collapse: collapse;
     }
-    main figure.franklin {
-        width:50%;
-        float:left;
-        overflow:hidden;
-    }
-    .forecast h3 {
-        clear:left;
+
+    article {
+        display:flex;
+        flex-flow: column;
+        justify-content: center;
         text-align: center;
+        border: 1px solid;
+        overflow: hidden;  
     }
-    .article {
-        overflow: hidden;
+    .fart {
+        display: flex;
+        flex-flow: row; 
     }
-    .conditions {
-        float:right;
-        clear:none;
-        text-align: right;
+    .fart img {
+        overflow: auto;   
     }
-    img[src="images/dusk.jpg"] {
-        float:right;
-        width:50%;
-        
-    }
-    .town-article {
-        float:left;
-        width:50%;
-    }
-    footer{
-        clear:right;
-    }
-   
+    
 }

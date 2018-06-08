@@ -14,53 +14,49 @@ header, nav, main, footer { /* the comma between the selectors means apply the f
   max-width: 2100px;
     /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
-
-header h1 {
-    text-align: center;
-    font-size: 2rem;
-    padding:0;
-    margin:0;  
-    margin-right: 35px;
-}
-header p {
-    font-size: 11.5px;
-}
 header {
-    background-color: dodgerblue
-}
-h1::first-letter {
-   font-size: 150%;
-    vertical-align:middle;   
-}
-header .subheading {
-    text-align: center;
-    margin:0;
-    padding:0;  
-    margin-left: 85px;
-    margin-top: -15px
+    display:flex;
+    flex-direction: row;
+    background-color: dodgerblue;
+    
+    margin:10px auto;
+    }
+header picture {
+    flex:0 1 128px;
+    text-align: center;   
+    justify-content: center;
 }
 header picture.logo {
-    float:left;   
+    width:100%;
+    height:auto;
+}
+.headings {
+    flex:auto;
+    display:flex;
+    flex-direction: column;
+    text-align: center;  
+}
+header h1 {
+    font-size: 2rem;
     padding:0;
-    margin:0;  
+    margin:0;
 }
-main h2 {
-    text-align: center;
-    color:cornflowerblue;
+header .subheading {
+    font-size: 10.5px;
+    margin:0;
+    color: darkblue;
 }
-.current picture {
-    display:none;
+h1::first-letter {
+   font-size: 150%;    
 }
 nav button {  
     background-color: transparent;
     border: none;
     font-size: 2rem;
-    color:#555;
-    float:right;
-    margin-top: -80px;
-    margin-right: 0;
+    color:#555; 
 }
-
+#menuid {
+}
 nav ul {
     list-style-type: none;
     padding:0;
@@ -73,57 +69,55 @@ nav ul li a {
     color: #000;
     border-top: 1px solid rgba(0,0,0,.3);
 }
-nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
-
-
+nav ul li:hover {
+    background-color: rgba(0,0,0,0.4);
+}
 nav ul.hides {
     display:none;
 }
 nav ul li.active a{
     background-color: rgba(0,0,0,0.2);
 }
-main figure.franklin {
-    margin: 0;
-    padding: 0;  
+.franklin img {
+    width:100%;
+}
+.weather {
+    display:flex;
+    flex-flow: column;
+    text-align: center;
 }
 .current {
-text-align:center;
-    float:left;  
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+
 }
+
 .highlow {
-    float: right;
-    text-align: center;  
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
 }
 .conditions {
-    text-align: center; 
-    clear:left;
-}
-#articletitle {
     text-align: center;
 }
-article {
-    border:solid;
-    border-color: cornflowerblue;
-    overflow: hidden;
+.wc {
+    text-align: center;
 }
-.clearfix:after {
-    content:"";
-    display: table;
-    clear: both;
-}
-section.forecast {
+
+.forecast {
     display:none;
 }
-footer .contact, .footer-bar {
+article h3 {
     text-align: center;
-   border: solid;
 }
-footer {
-    margin-bottom: 0;   
+article img {
+    max-width: 100%;
 }
-.footer-bar {
-    background-color:royalblue
-}
-.contact {
-    background-color: lightsteelblue
-}
+   footer {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    } 

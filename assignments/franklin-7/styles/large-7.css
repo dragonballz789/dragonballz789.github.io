@@ -1,75 +1,26 @@
 @media only screen and (min-width: 64em ) {
   
-header h1 {
-    text-align: center;
-    font-size: 5rem;
-    padding:0;
-    margin:0;
-}
-header p {
-    font-size: 16px;
-}
-
-h1::first-letter {
-    font-size: 150%;
-    vertical-align:middle;  
-}
-
-header .subheading {
-    text-align: center;
-    margin-left: 120px;
-    margin-top: -45px;
-    padding:0;
-    color: aliceblue;  
-}
-nav {
-    background-color: #ccc;
+    header h1 {
+        font-size: 5rem;
     }
-nav ul.hides {
-    display:block;
-}
-    section.forecast {
-    display:block;
-} 
-    section.highlow {
-    text-align: center;  
-}
-    .forecast table {
-        table-layout: auto;
-        border-spacing: .5rem;
-        border-collapse: collapse;
-        width:100%;
-        text-align: center;
-    }
-nav button {
+    header .subheading {
+        font-size: 16px;
+    }   
+    nav button {
     display:none;
 } 
-    .forecast h3 {
-        text-align: center;
+    .weather {
+        display:block;
     }
-    main figure.franklin{
-        clear:right;
-        width:100%;
-        overflow: hidden;
-    }
-    .current {
-        width:33%;
-        font-size: 1.6rem;   
+    .weather-summary {
+        display:flex;
+        flex-flow: row;
+        justify-content: space-around;
     }
     .highlow {
-        width:33%;
-        float:left;
-        clear:both;
-        font-size: 1.6rem;
+        flex-flow: column;
     }
-    #high, #low {
-        width:80px;
-        outline
-    }
-    .conditions {
-        width:33%;
-        text-align: center;
-        font-size: 1.6rem;
-        white-space: nowrap;
+    .weather h2 {
+        line-height: normal;
     }
 }
