@@ -12,10 +12,10 @@
     #menuid {
         display:flex;
         flex-flow: row wrap;
-        justify-content: space-around; 
+        justify-content: space-around;  
     }
-    nav ul li a {
-      text-decoration: none;
+    nav ul li a{
+        border-top: none;
     }
     nav ul li {
         overflow: hidden;
@@ -24,8 +24,7 @@
         flex-flow: row;   
     }
     .weather h2 {
-        line-height: 215px;
-        
+        line-height: 215px; 
     }
     .current {
         flex-flow: column;
