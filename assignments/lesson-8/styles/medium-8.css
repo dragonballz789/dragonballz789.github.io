@@ -1,0 +1,67 @@
+@media only screen and (min-width: 37.5em ) {
+   
+    header h1 {
+        font-size: 4rem
+    }
+    header .subheading {
+        font-size: 16px;
+    }
+    nav button{
+        display:none;   
+    }
+    #menuid {
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;  
+    }
+    nav ul li a{
+        border-top: none;
+    }
+    nav ul li {
+        overflow: hidden;
+    }
+    .weather{
+        flex-flow: row;   
+    }
+    .weather h2 {
+        line-height: 215px; 
+    }
+    .current {
+        flex-flow: column;
+    }
+    section.forecast {
+        display:block;
+    }
+    .forecast h3 {
+        margin-bottom: 0;
+    }
+    .forecast h3, .forecast table {
+        table-layout: auto;
+        border-spacing: .5rem;
+        border-collapse: collapse;
+        width:100%;
+        text-align: center;
+        background-color: #ccc;
+    }
+    .forecast h3, .forecast table, th, td {
+        border:1px solid black;
+        border-collapse: collapse;
+    }
+
+    article {
+        display:flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid;
+        overflow: hidden;  
+    }
+    .fart {
+        display: flex;
+        flex-flow: row; 
+    }
+    .fart img {
+        overflow: auto;   
+    }
+    
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="assignment for week 8">
+    <link rel ="stylesheet" href="styles/gallerymain-8.css" type ="text/css">
+    <link rel ="stylesheet" href="styles/gallerymedium-8.css" type ="text/css">
+    <link rel ="stylesheet" href="styles/gallerylarge-8.css" type ="text/css">
+    
+    <title>stormcenter site</title>
+</head>
+<body>
+<header>
+</header>
+<main>
+    <form method="set" action="activate">
+        <fieldset>
+            <legend></legend>
+                <label>Full Name*<input type="text" name ="fname" required></label>
+                <label>E-mail<input type="email" name ="email"></label>
+                <label>Phone Number*<input type="tel" name ="telephone" required></label>
+                <label>Zip Code*<input type="number" name="zip" required></label>
+                <label>Storm Date<input type="date" name="sdate"></label>
+                <label>Storm Type<input type="list" name="stormtype"></label>
+                <label>Storm Severity<input type="range" name="severity"></label>
+                <label>Storm Region
+                    <select name ="Select Region"></select>
+                    <option value="Franklin">Franklin</option>
+                    <option value="Greenville">Greenville</option>
+                    <option value="SpringField">Springfield</option>
+                </label>
+                <div>User in-daner level</div>
+                <label><input type="radio" name="danger" value="yes">Yes</label>
+                <label><input type="radio" name="danger" value="no">No</label>
+                <label><input type="radio" name="danger" value="maybe">Maybe</label>
+                <label>Additional Information or Comments<input type="textarea" name="info"></label>
+                
+                
+            
+        </fieldset>
+    </form>
+</main>
+<footer>
+</footer>
+</body>
+</html>
