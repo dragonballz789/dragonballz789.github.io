@@ -1,0 +1,13 @@
+@media only screen and (min-width: 64em ) {
+      
+    header h1 {
+        font-size: 5rem;
+    }
+    header .subheading {
+        font-size: 16px;
+    }   
+    nav button {
+    display:none;
+} 
+    
+}

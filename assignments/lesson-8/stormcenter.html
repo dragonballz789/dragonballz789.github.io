@@ -1,47 +1,84 @@
 <!doctype html>
-<html>
+<html lang="en-us">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="assignment for week 8">
-    <link rel ="stylesheet" href="styles/gallerymain-8.css" type ="text/css">
-    <link rel ="stylesheet" href="styles/gallerymedium-8.css" type ="text/css">
-    <link rel ="stylesheet" href="styles/gallerylarge-8.css" type ="text/css">
+    <link rel ="stylesheet" href="styles/main-8.css" type ="text/css">
+    <link rel ="stylesheet" href="styles/medium-8.css" type ="text/css">
+    <link rel ="stylesheet" href="styles/large-8.css" type ="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     
     <title>stormcenter site</title>
 </head>
-<body>
-<header>
-</header>
+<body onload ="currentdate()">
+  <header>
+      <picture class="logo">
+          <source srcset = "images/cloudymain.jpg" media="(max-width:600px)"/>
+          <source srcset = "images/cloudymedium.jpg" media="(max-width: 950px)"/>
+          <source srcset = "images/cloudylarge.jpg" media ="(max-width: 2100px)"/>
+          <img src="images/cloudy.jpg" alt="cloudy"/>
+      </picture>
+      <div class="headings">
+      <h1>Volcano</h1>
+          <p class="subheading">Burning weather report site</p>
+      </div>
+    </header>
+         <nav class = "clearfix">
+      <button onclick="hamburger()">&#9776;</button>
+    <ul id="menuid" class="hides">
+    	<li><a href="#">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-8.html">Gallery</a></li>
+       
+    </ul>		
+  </nav> 
 <main>
-    <form method="set" action="activate">
+    <form method="set" action="thanks.html">
         <fieldset>
-            <legend></legend>
+            <legend>Basic Information </legend>
                 <label>Full Name*<input type="text" name ="fname" required></label>
                 <label>E-mail<input type="email" name ="email"></label>
                 <label>Phone Number*<input type="tel" name ="telephone" required></label>
                 <label>Zip Code*<input type="number" name="zip" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Storm Information</legend>
                 <label>Storm Date<input type="date" name="sdate"></label>
                 <label>Storm Type<input type="list" name="stormtype"></label>
                 <label>Storm Severity<input type="range" name="severity"></label>
                 <label>Storm Region
-                    <select name ="Select Region"></select>
+                    <select name ="Select Region">
                     <option value="Franklin">Franklin</option>
                     <option value="Greenville">Greenville</option>
                     <option value="SpringField">Springfield</option>
+                    </select>
                 </label>
                 <div>User in-daner level</div>
                 <label><input type="radio" name="danger" value="yes">Yes</label>
                 <label><input type="radio" name="danger" value="no">No</label>
                 <label><input type="radio" name="danger" value="maybe">Maybe</label>
                 <label>Additional Information or Comments<input type="textarea" name="info"></label>
-                
-                
-            
         </fieldset>
+        <input type="submit" value="Submission">
     </form>
 </main>
 <footer>
+    <section class="contact">
+        <p><b>Volcano</b><br>
+            123 Main St.<br>
+            Franklin, MU 83454<br>
+            (999)999.9999<br>          
+            contact@theurl.com<br><br></p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Volcano | <span id="currentdate()"></span>
+    </section>
 </footer>
+   <script type="text/javascript" src="scripts/hamburger-8.js"></script>
+    <script type ="text/javascript" src="scripts/currentdate8.js"></script>
+    <script type="text/javascript" src="scripts/windchill8.js"></script> 
 </body>
 </html>

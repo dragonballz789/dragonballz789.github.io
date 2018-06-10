@@ -13,6 +13,8 @@
         display:flex;
         flex-flow: row wrap;
         justify-content: space-around;  
+        align-content: center;
+        
     }
     nav ul li a{
         border-top: none;
