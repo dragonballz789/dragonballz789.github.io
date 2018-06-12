@@ -7,13 +7,39 @@
     <link rel="stylesheet" href="styles/gallerymain-8.css" type="text/css">
     <link rel="stylesheet" href="styles/gallerymedium-8.css" type="text/css">
     <link rel="stylesheet" href="styles/gallerylarge-8.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>volcanogallery</title>
     </head>
-<body>
+<body onload ="currentdate()"> 
+    
 
    
     <header>
-        <section class="gallery">
+          <picture class="logo">
+          <source srcset = "images/cloudymain.jpg" media="(max-width:600px)"/>
+          <source srcset = "images/cloudymedium.jpg" media="(max-width: 950px)"/>
+          <source srcset = "images/cloudylarge.jpg" media ="(max-width: 2100px)"/>
+          <img src="images/cloudy.jpg" alt="cloudy"/>
+      </picture>
+      <div class="headings">
+      <h1>Volcano</h1>
+          <p class="subheading">Burning weather report site</p>
+      </div>
+    </header>
+         <nav class = "clearfix">
+      <button onclick="hamburger()">&#9776;</button>
+    <ul id="menuid" class="hides">
+    	<li><a href="#">Home</a></li>
+    	<li class="active"><a href="franklin-8.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-8.html">Gallery</a></li>
+       
+    </ul>		
+  </nav>
+        
+    <section class="gallery">
             <ol>
                 <li><a href="#"><img class="gallery1" src="images/clouds200.jpg" alt="clouds" srcset="images/clouds500.jpg 500w, images/clouds800.jpg       800w, images/clouds1100.jpg 2000w"></a>
                   <figcaption>Cloudy</figcaption></li>
@@ -34,11 +60,22 @@
                 </li>
             </ol>
         </section>
-    </header>
     <main>
         
     </main>
     <footer>
+        <section class="contact">
+        <p><b>Volcano</b><br>
+            123 Main St.<br>
+            Franklin, MU 83454<br>
+            (999)999.9999<br>          
+            contact@theurl.com<br><br></p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Volcano | <span id="currentdate()"></span>
+    </section>
     </footer>
+   <script type="text/javascript" src="scripts/hamburger-8.js"></script>
+    <script type ="text/javascript" src="scripts/currentdate8.js"></script>
+    <script type="text/javascript" src="scripts/windchill8.js"></script> 
     </body>
 </html>

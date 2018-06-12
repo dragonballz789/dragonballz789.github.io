@@ -1,8 +1,29 @@
-@media only screen and (min-width: 27.5em ) {
+@media only screen and (min-width: 37.5em ) {
     
 body {
     background-color: blue;
-}
+} 
+    header h1 {
+        font-size: 4rem
+    }
+    header .subheading {
+        font-size: 16px;
+    }
+    nav button{
+        display:none;   
+    }
+    #menuid {
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;  
+        text-align: center;
+    }
+    nav ul li a{
+        border-top: none;
+    }
+    nav ul li {
+        overflow: hidden;
+    }
 .gallery ol{
     display:grid;
     grid-template-columns: auto auto;

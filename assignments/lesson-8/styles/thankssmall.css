@@ -7,22 +7,25 @@ body {
   font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     background-color: whitesmoke;
+    margin-left: 2%;
+    margin-right: 2%;
     
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
   max-width: 2100px;
     /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+   
 }
 header {
     display:flex;
     flex-direction: row;
     background-color: dodgerblue;
     margin:10px auto;
+    
     }
 header picture {
-    flex:0 1 128px;
-    text-align: center;   
+    flex:0 1 128px;   
     justify-content: center;
 }
 header picture.logo {
@@ -33,7 +36,9 @@ header picture.logo {
     flex:auto;
     display:flex;
     flex-direction: column;
-    text-align: center;  
+    text-align: center;
+    align-content: center;
+   
 }
 header h1 {
     font-size: 2rem;
@@ -54,9 +59,7 @@ nav button {
     font-size: 2rem;
     color:#555; 
 }
-#menuid {
-    
-}
+
 nav ul {
     list-style-type: none;
     padding:0;
@@ -78,46 +81,8 @@ nav ul.hides {
 nav ul li.active a{
     background-color: rgba(0,0,0,0.2);
 }
-.franklin img {
-    width:100%;
-}
-.weather {
-    display:flex;
-    flex-flow: column;
-    text-align: center;
-}
-.current {
-    display:flex;
-    flex-flow: row;
-    justify-content: center;
-    align-content: center;
-
-}
-
-.highlow {
-    display:flex;
-    flex-flow: row;
-    justify-content: center;
-    align-content: center;
-}
-.conditions {
-    text-align: center;
-}
-.wc {
-    text-align: center;
-}
-
-.forecast {
-    display:none;
-}
-article h3 {
-    text-align: center;
-}
-article img {
-    max-width: 100%;
-}
-   footer {
+ footer {
         display: flex;
         flex-flow: column;
         text-align: center;
-    } 
+    }
