@@ -12,4 +12,25 @@
     
    
     
+
+form {
+    display:flex;
+    flex direction: row;
+    flex-wrap: wrap;
+    }
+    form>fieldset {
+        flex:0 1 49%;
+    }
+    form #basicinformation {
+        
+       
+    }
+    form #storminformation {
+          
+      
+    }
+form input[type=submit]{
+    flex:;
+    
+}
 }

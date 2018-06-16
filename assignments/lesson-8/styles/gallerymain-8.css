@@ -13,9 +13,7 @@ header, nav, main, footer { /* the comma between the selectors means apply the f
     /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
-body {
-    background-color: aqua;
-}
+
 .gallery ol{
     display:grid;
     grid-template-columns: auto;
@@ -38,7 +36,7 @@ ol li {
 header {
     display:flex;
     flex-direction: row;
-    background-color: dodgerblue;
+    background-color: skyblue;
     margin:10px auto;
     
     }

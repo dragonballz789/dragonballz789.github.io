@@ -20,7 +20,7 @@ header, nav, main, footer { /* the comma between the selectors means apply the f
 header {
     display:flex;
     flex-direction: row;
-    background-color: dodgerblue;
+    background-color: skyblue;
     margin:10px auto;
     
     }
@@ -86,6 +86,7 @@ nav ul li.active a{
         flex-flow: column;
         text-align: center;
     } 
+
 form label.top  {
     display:block;
 }
@@ -98,6 +99,11 @@ main #storminformation {
     padding-left: 2%px;
     font-size: 24px;
     padding-bottom: 10px;
+    margin-bottom: 20px
+}
+label {
+    padding-top:2px;
+    padding-bottom: 2px;
 }
 input[type="text"] {
     font-size: 24px;
@@ -114,10 +120,18 @@ input[type="tel"] {
 input[type="number"] {
     font-size: 24px;
     margin-bottom: 5px;
+    width:90px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance:none;
+    
+    
 }
 input[type="date"] {
     font-size: 24px;
     margin-bottom: 5px;
+    
 }
 input[list] {
     font-size: 24px;
@@ -126,7 +140,6 @@ input[list] {
 input[type="textarea"] {
     font-size: 24px;
     margin-bottom: 5px;
-    border:none;
     
 }
 input[type="radio"] {
@@ -153,4 +166,7 @@ input[type="submit"] {
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+main form textarea {
+    resize: none;
 }

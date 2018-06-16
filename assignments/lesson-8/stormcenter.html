@@ -37,13 +37,13 @@
     </ul>		
   </nav> 
 <main>
-    <form method="set" action="thanks.html">
+    <form action="thanks.html">
         <fieldset id="basicinformation">
             <legend>Basic Information </legend>
                 <label class="top">Full Name*<input type="text" name ="fname" placeholder="Five or more Alpha characters" required pattern=".{5,}" title="Five or more Alpha Characters" size="23"></label>
-                <label class="top">E-mail<input type="email" name ="email" size="23"></label>
-                <label class="top">Phone Number*<input type="tel" name ="telephone" required></label>
-                <label class="top">Zip Code*<input type="number" name="zip" min="1" max="5" required></label>
+                <label class="top">E-mail<input type="email" name ="email" size="23" placeholder="optional"></label>
+                <label class="top">Phone Number*<input type="tel" name ="telephone" placeholder ="---/---/----" required></label>
+                <label class="top">Zip Code*<input type="number" name="zip_code" maxlength="5" max="99999" required></label>
         </fieldset>
         <fieldset id="storminformation">
             <legend>Storm Information</legend>
@@ -71,7 +71,7 @@
                 <label><input type="radio" name="danger" value="no">No</label>
                 <label><input type="radio" name="danger" value="maybe">Maybe</label>
                 <div>Additional Information or Comments</div>
-                <textarea rows ="3" cols="45" name="comments" maxlength="500" wrap="hard"></textarea>
+                <textarea rows ="3" cols="40" name="comments" maxlength="500" wrap="hard"></textarea>
         </fieldset>
         <input type="submit" value="Submission">
     </form>
