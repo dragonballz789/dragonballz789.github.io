@@ -1,0 +1,41 @@
+@media only screen and (min-width: 37.5em ) {
+    
+ 
+    header h1 {
+        font-size: 4rem
+    }
+    header .subheading {
+        font-size: 16px;
+    }
+    nav button{
+        display:none;   
+    }
+    #menuid {
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;  
+        text-align: center;
+    }
+    nav ul li a{
+        border-top: none;
+    }
+    nav ul li {
+        overflow: hidden;
+    }
+.gallery ol{
+    display:grid;
+    grid-template-columns: auto auto;
+    
+    background-color:whitesmoke;
+}
+    .gallery ol img, figcaption{
+       
+            box-shadow: 5px 10px #555;
+    }
+    ol li {
+        display:block;
+    }
+    .gallery img {
+        width:100%;
+    }
+}

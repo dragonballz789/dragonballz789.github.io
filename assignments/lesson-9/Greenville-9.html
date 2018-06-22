@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="franklin page with link to gallery and using flexbox format">
+    <link rel="stylesheet" href="styles/normalize-9.css" type="text/css">
+    <link rel="stylesheet" href="styles/main-9.css" type="text/css">
+    <link rel="stylesheet" href="styles/medium-9.css" type="text/css">
+    <link rel="stylesheet" href="styles/large-9.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+  <title>volcanoweather</title>   
+</head>
+<body onload ="currentdate()">
+  <header>
+      <picture class="logo">
+          <source srcset = "images/cloudymain.jpg" media="(max-width:600px)"/>
+          <source srcset = "images/cloudymedium.jpg" media="(max-width: 950px)"/>
+          <source srcset = "images/cloudylarge.jpg" media ="(max-width: 2100px)"/>
+          <img src="images/cloudy.jpg" alt="cloudy"/>
+      </picture>
+      <div class="headings">
+      <h1>Volcano</h1>
+          <p class="subheading">Burning weather report site</p>
+      </div>
+      <figure>
+          
+      </figure>
+  </header>
+    <nav class = "clearfix">
+      <button onclick="hamburger()">&#9776;</button>
+    <ul id="menuid" class="hides">
+    	<li><a href="index.html">Home</a></li>
+    	<li class="active"><a href="franklin-9.html">Franklin</a></li>
+    	<li><a href="Greenville-9.html">Greenville</a></li>
+    	<li><a href="Springfield-9.html">Springfield</a></li>
+    	<li><a href="stormcenter-9.html">Storm Center</a></li>
+    	<li><a href="gallery-9.html">Gallery</a></li>
+       
+    </ul>		
+  </nav>
+    <main>
+  
+    
+    <article>
+       
+    </article>		  
+  </main> 
+  <footer>
+    <section class="contact">
+        <p><b>Volcano</b><br>
+            123 Main St.<br>
+            Franklin, MU 83454<br>
+            (999)999.9999<br>          
+            contact@theurl.com<br><br>
+        Weather data provided by <a href ="https://openweathermap.org">openweathermap.org</a>
+        </p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Volcano | <span id="currentdate()"></span>
+    </section>
+  </footer>
+    <script type="text/javascript" src="scripts/hamburger-8.js"></script>
+    <script type ="text/javascript" src="scripts/currentdate8.js"></script>
+    <script type="text/javascript" src="scripts/windchill8.js"></script>
+</body>
+</html>

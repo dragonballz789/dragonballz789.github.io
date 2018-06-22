@@ -1,0 +1,123 @@
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+    
+
+body {
+  font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke;
+    
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 2100px;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+header {
+    display:flex;
+    flex-direction: row;
+    background-color: skyblue;
+    margin:10px auto;
+    }
+header picture {
+    flex:0 1 128px;
+    text-align: center;   
+    justify-content: center;
+}
+header picture.logo {
+    width:100%;
+    height:auto;
+}
+.headings {
+    flex:auto;
+    display:flex;
+    flex-direction: column;
+    text-align: center;  
+}
+header h1 {
+    font-size: 2rem;
+    padding:0;
+    margin:0;
+}
+header .subheading {
+    font-size: 10.5px;
+    margin:0;
+    color: darkblue;
+}
+h1::first-letter {
+   font-size: 150%;    
+}
+nav button {  
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color:#555; 
+}
+#menuid {
+    
+}
+nav ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+nav ul li a {
+    display:block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,.3);
+}
+nav ul li:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+nav ul.hides {
+    display:none;
+}
+nav ul li.active a{
+    background-color: rgba(0,0,0,0.2);
+}
+.franklin img {
+    width:100%;
+}
+.weather {
+    display:flex;
+    flex-flow: column;
+    text-align: center;
+}
+.current {
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.highlow {
+    display:flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+}
+.conditions {
+    text-align: center;
+}
+.wc {
+    text-align: center;
+}
+
+.forecast {
+    display:none;
+}
+article h3 {
+    text-align: center;
+}
+article img {
+    max-width: 100%;
+}
+   footer {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    } 
