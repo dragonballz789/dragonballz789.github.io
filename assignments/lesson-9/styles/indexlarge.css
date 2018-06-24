@@ -1,0 +1,25 @@
+@media only screen and (min-width: 64em ) {
+
+   
+    main #weatherstory p {
+        text-align: center;
+    }
+    main #weatherstory h2 {
+        text-align: center;
+    }
+    main .stores ol li {
+        border:1px solid;
+        box-shadow: 5px 10px 20px; 
+        margin:9px;
+        text-align: center;
+    }
+       header h1 {
+        font-size: 5rem;
+    }
+    header .subheading {
+        font-size: 16px;
+    }   
+ 
+    
+
+}

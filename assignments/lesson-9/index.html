@@ -3,11 +3,11 @@
 <head> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="franklin page with link to gallery and using flexbox format">
+    <meta name="description" content="home page for weather site">
     <link rel="stylesheet" href="styles/normalize-9.css" type="text/css">
-    <link rel="stylesheet" href="styles/main-9.css" type="text/css">
-    <link rel="stylesheet" href="styles/medium-9.css" type="text/css">
-    <link rel="stylesheet" href="styles/large-9.css" type="text/css">
+    <link rel="stylesheet" href="styles/indexmain.css" type="text/css">
+    <link rel="stylesheet" href="styles/indexmedium.css" type="text/css">
+    <link rel="stylesheet" href="styles/indexlarge.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     
   <title>volcanoweather</title>   
@@ -29,7 +29,6 @@
       </figure>
   </header>
     <nav class = "clearfix">
-      <button onclick="hamburger()">&#9776;</button>
     <ul id="menuid" class="hides">
     	<li><a href="index.html">Home</a></li>
     	<li class="active"><a href="franklin-9.html">Franklin</a></li>
@@ -40,32 +39,40 @@
     </ul>		
   </nav>
     <main>
-        <h1>
-            Towns
-        </h1>
-    <section id = franklin>
-        <h2>Franklin</h2>
-        <p>Motto: <span id=franklinmotto></span></p>
-        <p>Year Founded: <span id=franklinfounded></span></p>
-        <p>Population: <span id=franklinpopulation></span></p>
-        <p>Annual Rainfall: <span id=franklinrainfall></span></p>
-    </section>
-    <section id=greenville>
-        <h2>Greenville</h2>
-        <p>Motto: <span id=greenvillemotto></span></p>
-        <p>Year Founded: <span id=greenvillefounded></span></p>
-        <p>Population: <span id=greenvillepopulation></span></p>
-        <p>Annual Rainfall: <span id=greenvillerainfall></span></p>
-    </section>
-    <section id=springfield>
-        <h2>Springfield</h2>    
-        <p>Motto: <span id=springfieldmotto></span></p>
-        <p>Year Founded: <span id=springfieldfounded></span></p>
-        <p>Population: <span id=springfieldpopulation></span></p>
-        <p>Annual Rainfall: <span id=springfieldrainfall></span></p>
-    </section>
-  
-    
+    <section class= stores>
+        <ol>
+        <li> 
+            <h2>Weather Story</h2>    
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, ji.</p></li>
+            <li><img src="images/wolf200.jpg" alt="wolf" srcset ="images/wolf500.jpg 600w, images/wolf800.jpg 1100w, images/wolf1100.jpg 2000w" sizes = "(max-width: 600px) 601px, (max-width:1050px) 1050px, (max-width:2000px) 2000px">
+            </li>
+        <li>
+            <h2>Franklin</h2>
+            <p>Motto: <span id=franklinmotto></span></p>
+            <p>Year Founded: <span id=franklinfounded></span></p>
+            <p>Population: <span id=franklinpopulation></span></p>
+            <p>Annual Rainfall: <span id=franklinrainfall></span></p>
+            </li>
+            <li><img src="images/dusk200.jpg" alt ="dusk" srcset = "images/dusk500.jpg 600w, images/dusk800.jpg 1100w, images/dusk1100.jpg 2000w" sizes ="(max-width: 600px) 601px, (max-width:1050px) 1050px, (max-width:2000px) 2000px">
+            </li>
+        <li>
+            <h2>Greenville</h2>
+            <p>Motto: <span id=greenvillemotto></span></p>
+            <p>Year Founded: <span id=greenvillefounded></span></p>
+            <p>Population: <span id=greenvillepopulation></span></p>
+            <p>Annual Rainfall: <span id=greenvillerainfall></span></p></li>
+            <li><img src="images/beachview200.jpg" alt="greenviewpic" srcset = "images/beachview500.jpg 600w, images/beachview800.jpg 1100w, images/beachview1100.jpg 2000w" sizes="(max-width: 600px) 601px, (max-width:1050px) 1050px, (max-width:2000px) 2000px">
+            </li>
+        <li>>
+            <h2>Springfield</h2>    
+            <p>Motto: <span id=springfieldmotto></span></p>
+            <p>Year Founded: <span id=springfieldfounded></span></p>
+            <p>Population: <span id=springfieldpopulation></span></p>
+            <p>Annual Rainfall: <span id=springfieldrainfall></span></p></li>
+            <li><img src="images/cloudybeach200.jpg" alt="springfieldpic" srcset = "images/cloudybeach500.jpg 600w, images/cloudybeach800.jpg 1100w, images/cloudybeach1100.jpg 2000w" sizes ="(max-width: 600px) 601px, (max-width:1050px) 1050px, (max-width:2000px) 2000px">
+            </li>
+        </ol>
+        </section>
     <article>
        
     </article>		  

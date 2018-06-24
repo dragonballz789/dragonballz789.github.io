@@ -1,0 +1,59 @@
+@media only screen and (min-width: 37.5em ) {
+    
+    
+  
+    header h1 {
+        font-size: 4rem
+    }
+    header .subheading {
+        font-size: 16px;
+    }
+   
+    #menuid {
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;  
+        align-content: center;
+        
+    }
+    nav ul li a{
+        border-top: none;
+    }
+    nav ul li {
+        overflow: hidden;
+    }
+ main .stores ol li:nth-child(3) {
+    display:block;
+}
+main .stores ol li:nth-child(4) {
+    display:block;
+}
+main .stores ol li:nth-child(5) {
+    display:block;
+}
+main .stores ol li:nth-child(6) {
+    display:block;
+}
+main .stores ol li:nth-child(7) {
+    display:block;
+}
+main .stores ol li:nth-child(8) {
+    display:block;
+}
+    .stores ol {
+        display: grid;
+        grid-template-columns: auto auto;
+        list-style: none;   
+        margin:0;
+        padding:0;
+    }
+    #weatherstory h2 {
+        text-align: center;
+    }
+    .stores ol li {
+        border:1px solid;
+        box-shadow: 5px 10px 20px;
+        padding:10px;
+        margin:10px;  
+    }
+}
