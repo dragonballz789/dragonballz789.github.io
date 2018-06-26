@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="franklin page with link to gallery and using flexbox format">
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="styles/franklinmain.css" type="text/css">
+    <link rel="stylesheet" href="styles/franklinmedium.css" type="text/css">
+    <link rel="stylesheet" href="styles/franklinlarge.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+  <title>volcanoweather</title>   
+</head>
+<body onload ="currentdate()">
+  <header>
+      <picture class="logo">
+          <source srcset = "images/cloudymain.jpg" media="(max-width:600px)"/>
+          <source srcset = "images/cloudymedium.jpg" media="(max-width: 950px)"/>
+          <source srcset = "images/cloudylarge.jpg" media ="(max-width: 2100px)"/>
+          <img src="images/cloudy.jpg" alt="cloudy"/>
+      </picture>
+      <div class="headings">
+      <h1>Volcano</h1>
+          <p class="subheading">Burning weather report site</p>
+      </div>
+      <figure>
+          
+      </figure>
+  </header>
+    <nav class = "clearfix">
+      <button onclick="hamburger()">&#9776;</button>
+    <ul id="menuid" class="hides">
+    	<li><a href="home.html">Home</a></li>
+    	<li class="active"><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+       
+    </ul>		
+  </nav>
+    <main>
+        <div class ="weather">
+       
+        <figure class="franklin">
+        <img src ="images/franklinmain.jpeg" alt = "dusk" srcset="images/franklinmain.jpeg 601w, images/franklinmedium.jpeg 1051w, images/franklinjarge.jpeg 2001w" sizes="(max-width: 600px) 601px, (max-width:1050px) 1050px, (max-width:2000px) 2000px">
+        </figure>
+             <h2>Franklin</h2>
+        <section class="weather-summary">
+       
+        <div class="highlow">
+          <p>High: <span id="franklinhigh"></span>&deg;</p>
+          <p>Low: <span id="franklinlow"></span>&deg;</p>
+        </div>
+        <div class="current">
+        <p><span id="currentdescription"></span></p>
+        <figure>
+            <span id="franklincurrenticon"></span>
+        </figure>
+        </div>   
+        <div class="conditions">
+            <p>Precipitation: <span id="franklinprec"></span></p>  
+            <p>Wind Speed: <span id="franklinwind"></span></p>  
+        </div>           
+        </section>
+        </div>
+        <section class ="wc">
+            <p>High: <input type="text" id="high" maxlength="3" size="1"> &deg; F Low: <input type="text" id="low" maxlength="3" size="1"> &deg; F Windspeed<input type="text" id="windspeed" maxlength="3" size="1"></p>
+            <input type ="submit" onclick="windchil()">Wind Chill Factor
+        <div id='windchil()'></div>
+        </section>
+      
+        <section class="forecast">
+        <h3>Ten Day Forecast</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day 1</th>
+                     <th>Day 2</th>
+                     <th>Day 3</th>
+                     <th>Day 4</th>
+                     <th>Day 5</th>
+                     <th>Day 6</th>
+                     <th>Day 7</th>
+                     <th>Day 8</th>
+                     <th>Day 9</th>
+                     <th>Day 10</th>
+                </tr>
+	       </thead>
+           <tbody>  
+               <tr>
+                    <td>89&deg;F</td>
+                    <td>87&deg;F</td>
+                    <td>78&deg;F</td>
+                    <td>75&deg;F</td>
+                    <td>72&deg;F</td>
+                    <td>72&deg;F</td>
+                    <td>79&deg;F</td>
+                    <td>83&deg;F</td>
+                    <td>85&deg;F</td>
+                    <td>89&deg;F</td>
+               </tr>
+	       </tbody>
+        </table>
+        </section>
+    
+    <article>
+        <h3 id = "articletitle">Franklin Breaks Record</h3>
+        <div class ="fart">
+            <p class="town-article">
+                Nullam tristigue massa magna, sed rutrum sapien consectetur et. Donec erat dolor, posuere sed erat vitae, volutpat lobortis.
+            </p>
+        <img src="images/duskmain.jpg" alt ="dusk" srcset = "images/duskmain.jpg 601w, images/duskmedium.jpg 1051w, images/dusklarge.jpg 2000w" sizes="(max-width: 600px) 601px, (max-width:1050px) 1050px, (max-width:2000px) 2000px">
+        </div>
+    </article>		  
+  </main> 
+  <footer>
+    <section class="contact">
+        <p><b>Volcano</b><br>
+            123 Main St.<br>
+            Franklin, MU 83454<br>
+            (999)999.9999<br>          
+            contact@theurl.com<br><br>
+        Weather data provided by <a href ="https://openweathermap.org">openweathermap.org</a>
+        </p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Volcano | <span id="currentdate()"></span>
+    </section>
+  </footer>
+    <script type="text/javascript" src="js/hamburger.js"></script>
+    <script type ="text/javascript" src="js/currentdate.js"></script>
+    <script type="text/javascript" src="js/windchill.js"></script>
+    <script type="text/javascript" src="js/weather.js"></script>
+</body>
+</html>

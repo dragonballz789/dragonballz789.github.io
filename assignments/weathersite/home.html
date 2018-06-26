@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="home page for weather site">
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="styles/homemain.css" type="text/css">
+    <link rel="stylesheet" href="styles/homemedium.css" type="text/css">
+    <link rel="stylesheet" href="styles/homelarge.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+  <title>volcanoweather</title>   
+</head>
+<body onload ="currentdate()">
+  <header>
+      <picture class="logo">
+          <source srcset = "images/cloudymain.jpg" media="(max-width:600px)"/>
+          <source srcset = "images/cloudymedium.jpg" media="(max-width: 950px)"/>
+          <source srcset = "images/cloudylarge.jpg" media ="(max-width: 2100px)"/>
+          <img src="images/cloudy.jpg" alt="cloudy"/>
+      </picture>
+      <div class="headings">
+      <h1>Volcano</h1>
+          <p class="subheading">Burning weather report site</p>
+      </div>
+      <figure>
+          
+      </figure>
+  </header>
+    <nav class = "clearfix">
+    <ul id="menuid" class="hides">
+    	<li><a href="home.html">Home</a></li>
+    	<li class="active"><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    <main>
+    <section class= stores>
+        <ol>
+        <li> 
+            <h2>Weather Story</h2>    
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, ji.</p></li>
+            <li><img src="images/wolf200.jpg" alt="wolf" srcset ="images/wolf500.jpg 600w, images/wolf800.jpg 1100w, images/wolf1100.jpg 2000w" sizes = "(max-width: 600px) 601px, (max-width:1050px) 1050px, (max-width:2000px) 2000px">
+            </li>
+        <li>
+            <h2>Franklin</h2>
+            <p>Motto: <span id=franklinmotto></span></p>
+            <p>Year Founded: <span id=franklinfounded></span></p>
+            <p>Population: <span id=franklinpopulation></span></p>
+            <p>Annual Rainfall: <span id=franklinrainfall></span></p>
+            </li>
+            <li><img src="images/dusk200.jpg" alt ="dusk" srcset = "images/dusk500.jpg 600w, images/dusk800.jpg 1100w, images/dusk1100.jpg 2000w" sizes ="(max-width: 600px) 601px, (max-width:1050px) 1050px, (max-width:2000px) 2000px">
+            </li>
+        <li>
+            <h2>Greenville</h2>
+            <p>Motto: <span id=greenvillemotto></span></p>
+            <p>Year Founded: <span id=greenvillefounded></span></p>
+            <p>Population: <span id=greenvillepopulation></span></p>
+            <p>Annual Rainfall: <span id=greenvillerainfall></span></p></li>
+            <li><img src="images/beachview200.jpg" alt="greenviewpic" srcset = "images/beachview500.jpg 600w, images/beachview800.jpg 1100w, images/beachview1100.jpg 2000w" sizes="(max-width: 600px) 601px, (max-width:1050px) 1050px, (max-width:2000px) 2000px">
+            </li>
+        <li>>
+            <h2>Springfield</h2>    
+            <p>Motto: <span id=springfieldmotto></span></p>
+            <p>Year Founded: <span id=springfieldfounded></span></p>
+            <p>Population: <span id=springfieldpopulation></span></p>
+            <p>Annual Rainfall: <span id=springfieldrainfall></span></p></li>
+            <li><img src="images/cloudybeach200.jpg" alt="springfieldpic" srcset = "images/cloudybeach500.jpg 600w, images/cloudybeach800.jpg 1100w, images/cloudybeach1100.jpg 2000w" sizes ="(max-width: 600px) 601px, (max-width:1050px) 1050px, (max-width:2000px) 2000px">
+            </li>
+        </ol>
+        </section>
+    <article>
+       
+    </article>		  
+  </main> 
+  <footer>
+    <section class="contact">
+        <p><b>Volcano</b><br>
+            123 Main St.<br>
+            Franklin, MU 83454<br>
+            (999)999.9999<br>          
+            contact@theurl.com<br><br>
+            Weather data provided by <a href ="https://openweathermap.org">openweathermap.org</a>
+                                  </p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Volcano | <span id="currentdate()"></span>
+    </section>
+  </footer>
+    <script type="text/javascript" src="js/hamburger.js"></script>
+    <script type ="text/javascript" src="js/currentdate.js"></script>
+    <script type="text/javascript" src="js/windchill.js"></script>
+    <script type="text/javascript" src="js/homejsondata.js"></script>
+</body>
+</html>

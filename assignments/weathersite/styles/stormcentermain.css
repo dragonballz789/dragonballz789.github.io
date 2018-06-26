@@ -1,0 +1,170 @@
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+    
+
+body {
+  font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 2100px;
+    /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+   
+}
+header {
+    display:flex;
+    flex-direction: row;
+    background-color: skyblue;
+    margin:10px auto;
+    
+    }
+header picture {
+    flex:0 1 128px;   
+    justify-content: center;
+}
+header picture.logo {
+    width:100%;
+    height:auto;
+}
+.headings {
+    flex:auto;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+   
+}
+header h1 {
+    font-size: 2rem;
+    padding:0;
+    margin:0;
+}
+header .subheading {
+    font-size: 10.5px;
+    margin:0;
+    color: darkblue;
+}
+h1::first-letter {
+   font-size: 150%;    
+}
+nav button {  
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color:#555; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+nav ul li a {
+    display:block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,.3);
+}
+nav ul li:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+nav ul.hides {
+    display:none;
+}
+nav ul li.active a{
+    background-color: rgba(0,0,0,0.2);
+}
+ footer {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    } 
+
+form label.top  {
+    display:block;
+}
+main #basicinformation {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+main #storminformation {
+    font-size: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 20px
+}
+label {
+    padding-top:2px;
+    padding-bottom: 2px;
+}
+input[type="text"] {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+input[type="email"] {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+input[type="tel"] {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+input[type="number"] {
+    font-size: 24px;
+    margin-bottom: 5px;
+    width:90px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance:none;
+    
+    
+}
+input[type="date"] {
+    font-size: 24px;
+    margin-bottom: 5px;
+    
+}
+input[list] {
+    font-size: 24px;
+    margin-bottom: 5px  
+}
+input[type="textarea"] {
+    font-size: 24px;
+    margin-bottom: 5px;
+    
+}
+input[type="radio"] {
+    margin-bottom: 15px;
+    width:14px;
+}
+label input {
+    border:none;
+    height:40px;
+}
+input[list="stormtype"] {
+    height:30px;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    font-size: 24px;
+}
+
+#storminformation select {
+    font-size: 24px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+main form textarea {
+    resize: none;
+}

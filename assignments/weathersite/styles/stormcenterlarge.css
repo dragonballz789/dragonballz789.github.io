@@ -1,0 +1,24 @@
+@media only screen and (min-width: 64em ) {
+      
+    header h1 {
+        font-size: 5rem;
+    }
+    header .subheading {
+        font-size: 16px;
+    }   
+    nav button {
+    display:none;
+} 
+    
+   
+    
+
+form {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    form>fieldset {
+        flex:0 1 49%;
+    }
+}

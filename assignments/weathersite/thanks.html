@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="assignment for week 8">
+    <link rel ="stylesheet" href="styles/thankssmall.css" type ="text/css">
+    <link rel ="stylesheet" href="styles/thanksmedium.css" type ="text/css">
+    <link rel ="stylesheet" href="styles/thankslarge.css" type ="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+    <title>thanks page after submitting the form on  storm center</title>
+</head>
+<body onload ="currentdate()">
+  <header>
+      <picture class="logo">
+          <source srcset = "images/cloudymain.jpg" media="(max-width:600px)"/>
+          <source srcset = "images/cloudymedium.jpg" media="(max-width: 950px)"/>
+          <source srcset = "images/cloudylarge.jpg" media ="(max-width: 2100px)"/>
+          <img src="images/cloudy.jpg" alt="cloudy"/>
+      </picture>
+      <div class="headings">
+      <h1>Volcano</h1>
+          <p class="subheading">Burning weather report site</p>
+      </div>
+    </header>
+         <nav class = "clearfix">
+      <button onclick="hamburger()">&#9776;</button>
+    <ul id="menuid" class="hides">
+    	<li><a href="home.html">Home</a></li>
+    	<li class="active"><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+       
+    </ul>		
+  </nav> 
+    <main>
+        <p>
+            Thanks You. Submission received.
+        </p>
+    </main>
+    </body>
+<footer>
+    <section class="contact">
+        <p><b>Volcano</b><br>
+            123 Main St.<br>
+            Franklin, MU 83454<br>
+            (999)999.9999<br>          
+            contact@theurl.com<br><br></p>
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Volcano | <span id="currentdate()"></span>
+    </section>
+</footer>
+   <script type="text/javascript" src="js/hamburger.js"></script>
+    <script type ="text/javascript" src="js/currentdate.js"></script>
+    <script type="text/javascript" src="js/windchill.js"></script> 
+    
+</html>
