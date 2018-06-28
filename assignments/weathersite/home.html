@@ -13,22 +13,10 @@
   <title>volcanoweather</title>   
 </head>
 <body onload ="currentdate()">
-  <header>
-      <picture class="logo">
-          <source srcset = "images/cloudymain.jpg" media="(max-width:600px)"/>
-          <source srcset = "images/cloudymedium.jpg" media="(max-width: 950px)"/>
-          <source srcset = "images/cloudylarge.jpg" media ="(max-width: 2100px)"/>
-          <img src="images/cloudy.jpg" alt="cloudy"/>
-      </picture>
-      <div class="headings">
-      <h1>Volcano</h1>
-          <p class="subheading">Burning weather report site</p>
-      </div>
-      <figure>
-          
-      </figure>
-  </header>
-    <nav class = "clearfix">
+ <header class="header" includefile="header.html">
+</header>
+   <nav class = "clearfix">
+      <button onclick="hamburger()">&#9776;</button>
     <ul id="menuid" class="hides">
     	<li><a href="home.html">Home</a></li>
     	<li class="active"><a href="franklin.html">Franklin</a></li>
@@ -36,6 +24,7 @@
     	<li><a href="springfield.html">Springfield</a></li>
     	<li><a href="stormcenter.html">Storm Center</a></li>
     	<li><a href="gallery.html">Gallery</a></li>
+       
     </ul>		
   </nav>
     <main>
@@ -90,6 +79,7 @@
     <section class="footer-bar">&copy;2018 | All Rights Reserved | Volcano | <span id="currentdate()"></span>
     </section>
   </footer>
+    <script type="text/javascript" src="js/includeheader.js"></script>
     <script type="text/javascript" src="js/hamburger.js"></script>
     <script type ="text/javascript" src="js/currentdate.js"></script>
     <script type="text/javascript" src="js/windchill.js"></script>
