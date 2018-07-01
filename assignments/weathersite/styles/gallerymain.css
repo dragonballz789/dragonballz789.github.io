@@ -14,37 +14,39 @@ header, nav, main, footer { /* the comma between the selectors means apply the f
 }
 
 
-.gallery ol{
+.gallery {
     display:grid;
     grid-template-columns: auto;
     background-color:ghostwhite;
 }
-ol li {
-    list-style-type: none;
+    ol li {
+        display:block;
 }
-.gallery ol li {
+.gallery img{
     padding:10px;
     
 }
-.gallery img {
+.gallery img{
     width:100%;
+    height: 100%;
+    max-height: 290px;
     
 }
 .gallery {
     list-style-type: none;
 }
-header {
+.weatherheader {
     display:flex;
     flex-direction: row;
     background-color: skyblue;
     margin:10px auto;
     
     }
-header picture {
+.weatherheader img {
     flex:0 1 128px;   
     justify-content: center;
 }
-header picture.logo {
+.weatherheader img.logo {
     width:100%;
     height:auto;
 }
@@ -102,3 +104,6 @@ nav ul li.active a{
         flex-flow: column;
         text-align: center;
     }
+nav ul #menuid li a {
+    
+}

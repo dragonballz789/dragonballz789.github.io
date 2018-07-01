@@ -14,18 +14,18 @@ header, nav, main, footer { /* the comma between the selectors means apply the f
   max-width: 2100px;
     /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
-header {
+.weatherheader {
     display:flex;
     flex-direction: row;
     background-color: skyblue;
     margin:10px auto;
     }
-header picture {
+.weatherheader img {
     flex:0 1 128px;
     text-align: center;   
     justify-content: center;
 }
-header picture.logo {
+.weatherheader img[logo] {
     width:100%;
     height:auto;
 }
@@ -121,3 +121,6 @@ article img {
         flex-flow: column;
         text-align: center;
     } 
+nav ul #menuid li a {
+    
+}

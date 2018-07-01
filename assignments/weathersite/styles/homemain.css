@@ -12,18 +12,18 @@ header, nav, main, footer { /* the comma between the selectors means apply the f
   max-width: 2100px;
     /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
-header {
+.weatherheader {
     display:flex;
     flex-direction: row;
     background-color: skyblue;
     margin:10px auto;
     }
-header picture {
+.weatherheader img {
     flex:0 1 128px;
     text-align: center;   
     justify-content: center;
 }
-header picture.logo {
+.weatherheader .weatherlogo{
     width:100%;
     height:auto;
 }
@@ -57,19 +57,24 @@ nav ul li a {
     padding: .8rem 2%;
     text-decoration: none;
     color: #000;
-    border-top: 1px solid rgba(0,0,0,.3);
+    border-top: 1px solid rgba(0,0,0,0.3);
 }
 nav ul li:hover {
     background-color: rgba(0,0,0,0.4);
+    
 }
 
 nav ul li.active a{
     background-color: rgba(0,0,0,0.2);
 }
+nav ul #menuid li a {
+    
+}
  footer {
         display: flex;
         flex-flow: column;
         text-align: center;
+        background-color: skyblue;
     } 
 main .stores ol {
     list-style: none;

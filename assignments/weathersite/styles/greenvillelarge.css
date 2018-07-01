@@ -1,0 +1,26 @@
+@media only screen and (min-width: 64em ) {
+  
+    header h1 {
+        font-size: 5rem;
+    }
+    header .subheading {
+        font-size: 16px;
+    }   
+    nav button {
+    display:none;
+} 
+    .weather {
+        display:block;
+    }
+    .weather-summary {
+        display:flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    .highlow {
+        flex-flow: column;
+    }
+    .weather h2 {
+        line-height: normal;
+    }
+}
